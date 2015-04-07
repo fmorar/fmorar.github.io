@@ -1,0 +1,54 @@
+//
+// Estilos de work 
+//
+
+.TitleSecundari{
+	margin-top: 50px;
+}
+
+.tabs{
+	li{
+		cursor: pointer;
+		display: inline-block;
+		@include font-size(24);
+		font-weight: bold;
+		margin: 5% 4%  5% 4%;
+	}
+}
+
+h3+p{
+	@include font-size(24);
+	margin-left: 20px;
+}
+
+.work, .overlay{
+	display: inline-block;
+	margin: 5px;
+
+	img{
+		height: 250px;
+		width: 250px;
+
+	}
+}
+
+//details
+
+h4{
+	@include font-size(24);
+	margin-top: 50px;
+}
+
+h4+p{
+	@include font-size(18);
+}
+
+span{
+	float: right;
+	margin: 10px;
+}
+
+.prevpost{
+	background: url(../img/work/details/arrow.svg) no-repeat;
+	background-size: 100% auto;
+}

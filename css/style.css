@@ -1,0 +1,194 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Track;
+  src: url(../fonts/Track.ttf); }
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+* {
+  box-sizing: inherit; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: Track;
+  padding: 0; }
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+h3, h4 {
+  border-left: 7px #fac113 solid;
+  padding: 0.5em;
+  font-size: 36px;
+  font-size: 3.6rem;
+  color: #fac113;
+  padding: 0 10px;
+  margin-top: 25%; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 1280px; }
+
+.content {
+  width: 960px;
+  margin: 0 auto; }
+
+nav.principal ul {
+  float: right; }
+nav.principal li {
+  display: inline-block; }
+
+h1 {
+  display: inline-block;
+  position: relative;
+  top: 5px; }
+  h1 a.logo {
+    padding: 0; }
+
+.principal {
+  height: 100px;
+  margin-top: 25px; }
+  .principal a {
+    color: #2c2f37;
+    padding: 0 30px;
+    font-family: Track;
+    line-height: 100px;
+    font-size: 24px;
+    font-size: 2.4rem;
+    text-decoration: none; }
+  .principal a[href^="#contact"] {
+    border-right: #fac113 5px solid; }
+
+h2 {
+  color: #fff;
+  background-color: #fac113;
+  display: inline-block;
+  padding: 10px 80px;
+  position: absolute;
+  right: 36%;
+  top: 80%;
+  font-size: 43px;
+  font-size: 4.3rem;
+  z-index: 2; }
+  h2.br {
+    right: 25%;
+    top: 90%; }
+
+img[alt="Retrato de un diseñador"] {
+  position: absolute;
+  margin: 0 auto; }
+
+#about p {
+  color: #2c2f37;
+  font-size: 20px;
+  font-size: 2rem;
+  margin-top: 5%; }
+
+.skill div {
+  display: inline-block;
+  margin: 10% 10% 0 0; }
+.skill ul {
+  border-left: 4px #fac113 solid;
+  padding: 0.5em;
+  padding-left: 10px; }
+.skill li {
+  color: #2c2f37;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 10% 0; }
+
+#contact {
+  background-color: #2c2f37;
+  background-size: cover;
+  width: 100% !important; }
+  #contact .destacado {
+    color: #fff;
+    border-left: 7px #fff solid;
+    padding: 0.5em;
+    margin-top: 10%;
+    position: relative;
+    top: 10%; }
+
+form {
+  padding: 10% 0; }
+
+input, textarea {
+  border: none;
+  background-color: #434753;
+  color: #8c92a3;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  line-height: 24px;
+  width: 60%; }
+
+input {
+  height: 40px; }
+
+textarea {
+  height: 120px; }
+
+input[type="submit"] {
+  background-color: #fff;
+  color: #8c92a3;
+  font-size: 24px;
+  font-size: 2.4rem; }
+  input[type="submit"]:hover {
+    color: #fac113; }
+
+::-webkit-input-placeholder {
+  color: #8c92a3;
+  font-size: 18px;
+  font-size: 1.8rem;
+  padding-left: 10px; }
+
+.copyright {
+  text-align: center;
+  font-size: 20px;
+  font-size: 2rem; }
+
+.TitleSecundari {
+  margin-top: 50px; }
+
+.tabs li {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 5% 4%  5% 4%; }
+
+h3 + p {
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin-left: 20px; }
+
+.work, .overlay {
+  display: inline-block;
+  margin: 5px; }
+  .work img, .overlay img {
+    height: 250px;
+    width: 250px; }
+
+h4 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  margin-top: 50px; }
+
+h4 + p {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+span {
+  float: right;
+  margin: 10px; }
+
+.prevpost {
+  background: url(../img/work/details/arrow.svg) no-repeat;
+  background-size: 100% auto; }
+
+/*# sourceMappingURL=style.css.map */

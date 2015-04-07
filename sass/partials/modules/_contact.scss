@@ -1,0 +1,56 @@
+//
+// Estilos para Contact
+//
+//
+
+#contact{
+	background-color: $SecondColor;
+	background-size: cover;
+	width: 100% !important;
+
+	.destacado{
+		color: #fff;
+		@include border-left(7px, #fff);
+		margin-top: 10%;
+		position: relative;
+		top: 10%;
+	}
+}
+form{
+	padding: 10% 0;
+}
+
+input, textarea{
+	border: none;
+	background-color: lighten( $SecondColor, 10% );
+	color: lighten( $SecondColor, 40% );
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	line-height: 24px;
+	width: 60%;
+}
+
+input{
+	height: 40px;
+}
+
+textarea{
+	height: 120px;
+}
+
+input[type="submit"]{
+	background-color: #fff;
+	color: lighten( $SecondColor, 40% );
+	 @include font-size(24);
+
+	 &:hover{
+	 	color: $PrincipalColor;
+	 }
+}
+
+::-webkit-input-placeholder {
+   color: lighten( $SecondColor, 40% );
+   @include font-size(18);
+   padding-left: 10px;
+}

@@ -3,58 +3,110 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Work Fabia Mora </title>
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header>
-		<nav class="principal">
-			<h1><img src="#" alt="Fabian mora Creative Desing"></h1>
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">work</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a class="icon-social" href="https://www.behance.net/fmorar">Behance</a></li>
-				<li><a class="icon-social" href="https://www.linkedin.com/in/fabmorar">Linkedin</a></li>
-				<li><a class="icon-social" href="https://twitter.com/fabmorar">Twitter</a></li>
-			</ul>
-		</nav>
+	<div class="wrapper">
+	<div class="content">
+			<nav class="principal">
+				<h1><a class="logo" href="index.html"><img src="img/general/logo.png" alt="Fabian mora Creative Desing"></a></h1>
+				<ul>
+					<li><a href="index.html#about">About</a></li>
+					<li><a href="work.html">work</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
+					<li><a class="icon-social" href="https://www.behance.net/fmorar" target="_blank"><img src="img/general/behance.svg" alt="Behance"></a></li>
+					<li><a class="icon-social" href="https://www.linkedin.com/in/fabmorar" target="_blank"><img src="img/general/linkedin.svg" alt="Linkedin"></a></li>
+					<li><a class="icon-social" href="https://twitter.com/fabmorar"target="_blank"><img src="img/general/twitter.svg" alt="Twitter"></a></li>
+				</ul>
+			</nav>
 	</header>
 
 	<section>
-		<h3>Work</h3>
+	<div class="content IntroWork">
+		<h3 class="TitleSecundari">Work</h3>
 		<p>Some examples of my previous work</p>
+		</div>
 	</section>
 
 	<section>
-		<input id="tab-1" type="radio" name="tab-group" checked="checked" />
-	    <label for="tab-1">All</label><!--tab 1 -->
-		<input id="tab-2" type="radio" name="tab-group"/>
-	    <label for="tab-2">Print</label><!--tab 2 -->
-		<input id="tab-3" type="radio" name="tab-group"/>
-	    <label for="tab-3">Web</label><!--tab 3 -->
-		<input id="tab-4" type="radio" name="tab-group"/>
-	    <label for="tab-4">Apps</label><!--tab 4 -->
-		<input id="tab-5" type="radio" name="tab-group"/>
-	    <label for="tab-5">Photography</label><!--tab 5 -->
-		<input id="tab-6" type="radio" name="tab-group"/>
-	    <label for="tab-7">Digital</label><!--tab 6 -->
+	<div class="content">
+		<nav class="tabs">
+			<ul>
+				<li id="tab 1">All</li>
+				<li id="tab 2">Print</li>
+				<li id="tab 3">Web</li>
+				<li id="tab 4">Apps</li>
+				<li id="tab 5">Photography</li>
+				<li id="tab 6">Digital</li>
+			</ul>
+		</nav>
 
 	    <div class="content-work">
-	    	<!--Aqui se dibujan los proyectos de forma dinamica-->
-	    	<!--example
 		    	<div class="overlay">
 		    		<div class="work">
-		    			<p>app</p>
-		    			<img src="#" alt="esta es una descripcion de un proyecto">
+		    			<img src="img/work/proyecto1.png" alt="esta es una descripcion de un proyecto">
 		    		</div>
 		    	</div>
-		    -close example-->
 
+		    	<div class="overlay">
+		    		<div class="work">
+		    			<img src="img/work/proyecto1.png" alt="esta es una descripcion de un proyecto">
+		    		</div>
+		    	</div>
+
+		    	<div class="overlay">
+		    		<div class="work">
+		    			<img src="img/work/proyecto1.png" alt="esta es una descripcion de un proyecto">
+		    		</div>
+		    	</div>
+
+		    	<div class="overlay">
+		    		<div class="work">
+		    			<img src="img/work/proyecto1.png" alt="esta es una descripcion de un proyecto">
+		    		</div>
+		    	</div>
+
+		    	<div class="overlay">
+		    		<div class="work">
+		    			<img src="img/work/proyecto1.png" alt="esta es una descripcion de un proyecto">
+		    		</div>
+		    	</div>
+
+		    	<div class="overlay">
+		    		<div class="work">
+		    			<img src="img/work/proyecto1.png" alt="esta es una descripcion de un proyecto">
+		    		</div>
+		    	</div>
+
+		    	<div class="overlay">
+		    		<div class="work">
+		    			<img src="img/work/proyecto1.png" alt="esta es una descripcion de un proyecto">
+		    		</div>
+		    	</div>
+
+		    	<div class="overlay">
+		    		<div class="work">
+		    			<img src="img/work/proyecto1.png" alt="esta es una descripcion de un proyecto">
+		    		</div>
+		    	</div>
+
+		    	<div class="overlay">
+		    		<div class="work">
+		    			<img src="img/work/proyecto1.png" alt="esta es una descripcion de un proyecto">
+		    		</div>
+		    	</div>
 	    </div>
+	</div>    
 	</section>
 
 	<footer>
+	<div class="content">
 		<p class="copyright">Desing and develop by Fabian Mora<br/>
 		© Copyright 2015</p>
+	</div>	
 	</footer>
+	</div>	
 </body>
 </html>

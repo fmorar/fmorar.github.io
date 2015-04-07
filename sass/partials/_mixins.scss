@@ -1,0 +1,25 @@
+//
+// Mixins
+//
+
+// font-size mixin
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size / 10) + rem;
+}
+
+// Botón
+@mixin button($PrincipalFont, $SecondColor) {
+  display: inline-block;
+  @include font-size($font-size);
+  padding: 0.5em 2em;
+  color: $SecondColor;
+  font-family:$PrincipalFont;
+}
+
+//border left
+
+@mixin border-left($stroke, $PrincipalColor){
+  border-left: $stroke $PrincipalColor solid; 
+  padding: 0.5em;
+}

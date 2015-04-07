@@ -1,0 +1,46 @@
+//
+// Estilos para la navegación
+//
+
+// Estilos generales
+
+nav.principal {
+
+  ul {
+    float: right;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+// Navegación principal
+
+h1{
+  display: inline-block;
+  position: relative;
+  top: 5px;
+
+  a.logo{
+    padding: 0;
+  }
+}
+
+.principal{
+  height: 100px;
+  margin-top: 25px;
+
+  a {
+    color: $SecondColor;
+    padding: 0 30px;
+    font-family: $PrincipalFont;
+    line-height: 100px;
+    @include font-size(24);
+    text-decoration: none;
+  }
+
+  a[href^="#contact"]{
+    border-right: $PrincipalColor 5px solid;
+  }
+}

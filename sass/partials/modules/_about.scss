@@ -1,0 +1,33 @@
+//
+// Estilos de about
+//
+
+
+
+#about{
+	p{
+		color: $SecondColor;
+		@include font-size(20);
+		margin-top: 5%;
+	}
+}
+
+.skill{
+	div{
+		display: inline-block;		
+		margin: 10% 10% 0 0;
+	}
+
+	ul{
+		@include border-left(4px, #fac113);
+		padding-left: 10px;
+
+	}
+
+	li{
+		color: $SecondColor;
+		@include font-size(24);
+		font-weight: bold;
+		margin: 10% 0;
+	}
+}
