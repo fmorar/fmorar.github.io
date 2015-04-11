@@ -28,6 +28,7 @@ h1{
 }
 
 .principal{
+  display: inline-block;
   height: 100px;
   margin-top: 25px;
 
@@ -42,5 +43,15 @@ h1{
 
   a[href^="#contact"]{
     border-right: $PrincipalColor 5px solid;
+  }
+}
+
+svg{
+  display: inline;
+  height: 31px;
+  width: 45px;
+
+  &:hover{
+    fill: $PrincipalColor;
   }
 }

@@ -21,15 +21,76 @@ h3+p{
 	margin-left: 20px;
 }
 
-.work, .overlay{
+.work{
 	display: inline-block;
-	margin: 5px;
+	margin: 20px;
 
-	img{
+	.overlay{
+		position: relative;
 		height: 250px;
 		width: 250px;
+		overflow: hidden;
+		-webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+		transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+		cursor: pointer;
 
+		&::before{
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			padding-top: 0;
+			width: 0;
+			border-radius: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			-webkit-animation: .4s ease-out;
+			animation: .4s ease-out;
+			content: '';
+		}
+
+		&:hover{
+			box-shadow: 0 17px 25px 0 rgba(0, 0, 0, 0.5);
+		}
+
+		&:hover::before{
+			-webkit-animation-name: circle;
+			animation-name: circle;
+		}
 	}
+}
+
+@-webkit-keyframes circle {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    padding-top: 150%;
+    width: 150%;
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    padding-top: 150%;
+    width: 150%;
+    opacity: 0;
+  }
 }
 
 //details

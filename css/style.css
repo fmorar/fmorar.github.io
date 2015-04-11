@@ -1,7 +1,8 @@
-@charset "UTF-8";
+@charset "CP850";
 @font-face {
   font-family: Track;
   src: url(../fonts/Track.ttf); }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -49,6 +50,7 @@ h1 {
     padding: 0; }
 
 .principal {
+  display: inline-block;
   height: 100px;
   margin-top: 25px; }
   .principal a {
@@ -62,24 +64,36 @@ h1 {
   .principal a[href^="#contact"] {
     border-right: #fac113 5px solid; }
 
+svg {
+  display: inline;
+  height: 31px;
+  width: 45px; }
+  svg:hover {
+    fill: #fac113; }
+
 h2 {
   color: #fff;
   background-color: #fac113;
   display: inline-block;
   padding: 10px 80px;
-  position: absolute;
-  right: 36%;
-  top: 80%;
+  position: relative;
+  left: 234px;
+  top: -190px;
   font-size: 43px;
   font-size: 4.3rem;
-  z-index: 2; }
+  z-index: 10; }
   h2.br {
-    right: 25%;
-    top: 90%; }
+    left: 100px;
+    top: -180px; }
 
 img[alt="Retrato de un diseñador"] {
-  position: absolute;
-  margin: 0 auto; }
+  padding: 0 25%;
+  position: relative;
+  z-index: 5; }
+
+canvas {
+  position: relative;
+  z-index: 1; }
 
 #about p {
   color: #2c2f37;
@@ -107,7 +121,7 @@ img[alt="Retrato de un diseñador"] {
   width: 100% !important; }
   #contact .destacado {
     color: #fff;
-    border-left: 7px #fff solid;
+    border-left: 7px white solid;
     padding: 0.5em;
     margin-top: 10%;
     position: relative;
@@ -167,12 +181,65 @@ h3 + p {
   font-size: 2.4rem;
   margin-left: 20px; }
 
-.work, .overlay {
+.work {
   display: inline-block;
-  margin: 5px; }
-  .work img, .overlay img {
+  margin: 20px; }
+  .work .overlay {
+    position: relative;
     height: 250px;
-    width: 250px; }
+    width: 250px;
+    overflow: hidden;
+    -webkit-transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer; }
+    .work .overlay::before {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      padding-top: 0;
+      width: 0;
+      border-radius: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -webkit-animation: .4s ease-out;
+      animation: .4s ease-out;
+      content: ''; }
+    .work .overlay:hover {
+      box-shadow: 0 17px 25px 0 rgba(0, 0, 0, 0.5); }
+    .work .overlay:hover::before {
+      -webkit-animation-name: circle;
+      animation-name: circle; }
+
+@-webkit-keyframes circle {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1; }
+
+  75% {
+    opacity: 1; }
+
+  100% {
+    padding-top: 150%;
+    width: 150%;
+    opacity: 0; } }
+
+@keyframes circle {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1; }
+
+  75% {
+    opacity: 1; }
+
+  100% {
+    padding-top: 150%;
+    width: 150%;
+    opacity: 0; } }
 
 h4 {
   font-size: 24px;
@@ -190,5 +257,3 @@ span {
 .prevpost {
   background: url(../img/work/details/arrow.svg) no-repeat;
   background-size: 100% auto; }
-
-/*# sourceMappingURL=style.css.map */
