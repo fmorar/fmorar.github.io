@@ -28,6 +28,7 @@ input, textarea{
 	margin: 0 auto;
 	margin-bottom: 10px;
 	line-height: 24px;
+	@include font-size(18);
 	width: 60%;
 }
 
@@ -54,3 +55,12 @@ input[type="submit"]{
    @include font-size(18);
    padding-left: 10px;
 }
+
+input:invalid {
+// border: 1px solid red;
+
+	&:valid{
+		border: 1px solid green;
+	}
+}
+ 

@@ -2,6 +2,10 @@
 // Estilos del header
 //
 
+#particles-js{
+	height: 800px;
+}
+
 h2{
 	color: #fff;
 	background-color: $PrincipalColor;
@@ -9,7 +13,7 @@ h2{
 	padding: 10px 80px;
 	position: relative;
 	left: 234px;
-  	top: -190px;
+  	top: -191px;
 	@include font-size(43);
 	z-index: 10;
 	&.br{
@@ -18,7 +22,7 @@ h2{
 	}
 }
 
-img[alt="Retrato de un diseñador"]{
+.retrato{
 	padding: 0 25%;
 	position: relative;
 	z-index: 5;
@@ -27,4 +31,6 @@ img[alt="Retrato de un diseñador"]{
 canvas{
 	position: relative;
 	z-index: 1;
+	top: -900px;
+	height: auto;
 }

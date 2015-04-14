@@ -1,8 +1,6 @@
-@charset "CP850";
 @font-face {
   font-family: Track;
   src: url(../fonts/Track.ttf); }
-
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -61,7 +59,7 @@ h1 {
     font-size: 24px;
     font-size: 2.4rem;
     text-decoration: none; }
-  .principal a[href^="#contact"] {
+  .principal .last-icon {
     border-right: #fac113 5px solid; }
 
 svg {
@@ -71,6 +69,9 @@ svg {
   svg:hover {
     fill: #fac113; }
 
+#particles-js {
+  height: 800px; }
+
 h2 {
   color: #fff;
   background-color: #fac113;
@@ -78,7 +79,7 @@ h2 {
   padding: 10px 80px;
   position: relative;
   left: 234px;
-  top: -190px;
+  top: -191px;
   font-size: 43px;
   font-size: 4.3rem;
   z-index: 10; }
@@ -86,14 +87,16 @@ h2 {
     left: 100px;
     top: -180px; }
 
-img[alt="Retrato de un diseñador"] {
+.retrato {
   padding: 0 25%;
   position: relative;
   z-index: 5; }
 
 canvas {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  top: -900px;
+  height: auto; }
 
 #about p {
   color: #2c2f37;
@@ -121,7 +124,7 @@ canvas {
   width: 100% !important; }
   #contact .destacado {
     color: #fff;
-    border-left: 7px white solid;
+    border-left: 7px #fff solid;
     padding: 0.5em;
     margin-top: 10%;
     position: relative;
@@ -138,6 +141,8 @@ input, textarea {
   margin: 0 auto;
   margin-bottom: 10px;
   line-height: 24px;
+  font-size: 18px;
+  font-size: 1.8rem;
   width: 60%; }
 
 input {
@@ -159,6 +164,9 @@ input[type="submit"] {
   font-size: 18px;
   font-size: 1.8rem;
   padding-left: 10px; }
+
+input:invalid:valid {
+  border: 1px solid green; }
 
 .copyright {
   text-align: center;
@@ -218,29 +226,23 @@ h3 + p {
     width: 0;
     height: 0;
     opacity: 1; }
-
   75% {
     opacity: 1; }
-
   100% {
     padding-top: 150%;
     width: 150%;
     opacity: 0; } }
-
 @keyframes circle {
   0% {
     width: 0;
     height: 0;
     opacity: 1; }
-
   75% {
     opacity: 1; }
-
   100% {
     padding-top: 150%;
     width: 150%;
     opacity: 0; } }
-
 h4 {
   font-size: 24px;
   font-size: 2.4rem;
@@ -257,3 +259,5 @@ span {
 .prevpost {
   background: url(../img/work/details/arrow.svg) no-repeat;
   background-size: 100% auto; }
+
+/*# sourceMappingURL=style.css.map */
