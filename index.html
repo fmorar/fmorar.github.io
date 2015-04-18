@@ -9,10 +9,11 @@
 <body>
 <div class="wrapper">
 	<header id="particles-js">
-		<div class="content">
-		<h1><a class="logo" href="#"><img src="img/general/logo.png" alt="Fabian mora Creative Desing"></a></h1>
+		
+		
 		<nav class="principal">
 			<ul>
+				<li><h1><a class="logo" href="index.html"><img src="img/general/logo.png" alt="Fabian mora Creative Desing"></a></h1></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="work.html">work</a></li>
 				<li><a class="last-icon" href="#contact">Contact</a></li>
@@ -63,6 +64,7 @@
 				</li>
 			</ul>
 		</nav>
+		<div class="content">
 		<img class="retrato" src="img/general/retrato.png" alt="Retrato de un diseñador">
 		<h2>Designer &amp;</h2> 
 		<h2 class="br">Front-end Developer</h2>
@@ -100,14 +102,17 @@
 	</section>
 	</div> <!--close wrapper-->
 
-	<section id="contact">
+	<section id="contact" >
 		<div class="content">
 		<h3 class="destacado">Contact</h3>
-		<form>    
-			<input type="text" name="name" placeholder="Name" required/>
-	        <input type="email" name="email" placeholder="E-mail" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
-	        <textarea name="message" rows="5" cols="30" placeholder="Message" required ></textarea>
-	        <input type="submit" name="submit" value="Send">
+		<form action="#" method=post id="Send">    
+			<input  id="name" type="text" name="name" placeholder="Name" />
+			<p id="error-name"></p>
+	        <input id="email" type="email" name="email" placeholder="E-mail" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" />
+	        <p id="error-email"></p>
+	        <textarea  id="message" name="message" rows="5" cols="30" placeholder="Message"  ></textarea>
+	        <p id="error-message"></p>
+	        <input type="button" name="submit" value="Send" onclick = "enviar()">
 	    </form>
 	    </div>
 	</section>
@@ -121,6 +126,6 @@
 
 
 <script src="js/particles.js"></script>
-<script src="js/app-particles.js"></script>	
+<script src="js/main.js"></script>	
 </body>
 </html>
