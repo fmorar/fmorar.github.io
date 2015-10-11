@@ -2,7 +2,21 @@
 // Estilos del footer
 //
 
+footer{
+	background-color: $PrincipalColor;
+	& ul{
+		text-align: center;
+	}
+}
+
+.social-bar{
+	display: inline-block;
+	width: 50px;
+}
+
 .copyright{
-	text-align: center;
-	@include font-size(20);
+	color: #fff;
+	@include font-size(16);
+	padding-top: 5%;
+    text-align: center;
 }

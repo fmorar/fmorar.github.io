@@ -7,9 +7,13 @@
   src: url(../fonts/Track.ttf);
 }
 
-html {
+html, body {
   box-sizing: border-box;
   font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
 }
 
 * {
@@ -29,21 +33,23 @@ ul, li{
 	list-style-type: none;
 }
 
-h3, h4{
-  @include border-left(7px, #fac113);
-  @include font-size(36);
-  color: $PrincipalColor;
-  padding: 0 10px;
-  margin-top: 25%;
+img{
+  width: inherit;
+  max-width: 100%;
+  height: auto;
+}
+
+svg{
+  height: 50px;
+  width: 50px;
 }
 
 // contenedores
 .wrapper{
   margin: 0 auto; 
-  width: $max-width;
 }
 
 .content{
-	width: $content-width;
 	margin: 0 auto;
+  padding: 0 3%;
 }

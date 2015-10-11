@@ -1,33 +1,50 @@
 //
 // Estilos de about
 //
-
-
-
 #about{
-	p{
-		color: $SecondColor;
-		@include font-size(20);
-		margin-top: 5%;
+	background-color: $SecondColor;
+}
+
+h3{
+	border-bottom:$PrincipalColor solid 5px;
+	color: $PrincipalColor;
+	@include font-size(30);
+	text-align: center;
+	padding-top: 5%;
+
+}
+
+.description{
+	font-family: $SecondFont;
+	@include font-size(18);
+	text-align: center;
+	padding-bottom: 5%;
+
+}
+
+.step-works{
+	padding: 5% 0;
+	text-align: center;
+}
+
+.step{
+	background-color: #000;
+	border-radius: 50%;
+	margin: 40px auto 30px;
+	height: 200px;
+	width: 200px;
+	& svg{
+		fill: #fff;
+		margin: 0 auto;
+		height: 100%;
+		width: 60%;
+	}
+	& p{
+		@include font-size(18);
+		font-weight: bold;
 	}
 }
 
-.skill{
-	div{
-		display: inline-block;		
-		margin: 10% 10% 0 0;
-	}
-
-	ul{
-		@include border-left(4px, #fac113);
-		padding-left: 10px;
-
-	}
-
-	li{
-		color: $SecondColor;
-		@include font-size(24);
-		font-weight: bold;
-		margin: 10% 0;
-	}
+.destacado{
+	fill: $PrincipalColor;
 }

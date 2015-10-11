@@ -1,19 +1,4 @@
 
-(function () {
-  var targetElement = document.querySelector('.principal'), // almacena solo el elemento con ese selector no lleva la propiedad all 
-      scrollTop,
-      targetOffsetTop = targetElement.offsetTop;
-
-  window.addEventListener('scroll', function() {
-    scrollTop = document.documentElement.scrollTop || document.body.scrollTop; //iguala el scrolltop a la posicion de la barra de scroll
-
-    if (scrollTop >= targetOffsetTop) {
-      targetElement.classList.add('fixed');
-    } else {
-      targetElement.classList.remove('fixed');
-    }
-  }, false);
-}());
 
 
 var appPortafolio = {};

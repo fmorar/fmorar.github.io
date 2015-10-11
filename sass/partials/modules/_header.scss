@@ -1,36 +1,30 @@
 //
 // Estilos del header
 //
-
-#particles-js{
-	height: 800px;
-}
-
-h2{
-	color: #fff;
-	background-color: $PrincipalColor;
-	display: inline-block;
-	padding: 10px 80px;
-	position: relative;
-	left: 234px;
-  	top: -191px;
-	@include font-size(43);
-	z-index: 10;
-	&.br{
-		left: 100px;
-  		top: -180px;
-	}
-}
-
-.retrato{
-	padding: 0 25%;
-	position: relative;
-	z-index: 5;
+header{
+	height: 100%;
 }
 
 canvas{
-	position: relative;
-	z-index: 1;
-	top: -900px;
-	height: auto;
+	background: url(../img/general/retrato.png) no-repeat center fixed;
+}
+
+h2{
+	background-color: $PrincipalColor;
+	color: #fff;
+	display: inline-block;
+	@include font-size(30);
+	left: 15%;
+	margin-bottom: 1%;
+	padding: 10px;
+	position:absolute;
+	text-align: center;
+	top: 70%;   
+	width: 70%;
+}   
+.br{
+	left: 5%;
+	top: 78%;
+	width: 90%;
+
 }
