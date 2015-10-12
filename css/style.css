@@ -203,4 +203,14 @@ footer {
   padding-top: 5%;
   text-align: center; }
 
+.work {
+  height: auto;
+  padding: 5% 0;
+  max-width: 100%;
+  text-align: center; }
+  @media screen and (min-width: 900px) {
+    .work {
+      display: inline-block;
+      margin: 20px; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -2,3 +2,14 @@
 // Estilos de work 
 //
 
+.work {
+	height:auto;
+	padding: 5% 0;
+	max-width:100%;
+	text-align: center;
+	@media screen and (min-width: 900px){
+		display: inline-block;
+		margin: 20px;
+
+	}
+}
